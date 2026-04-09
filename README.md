@@ -1,27 +1,27 @@
-# WeatherApp
+# 🌤️ Angular Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+แอปพลิเคชันพยากรณ์อากาศที่พัฒนาด้วย Angular 17+ (Standalone Components) เพื่อดึงข้อมูลสภาพอากาศและพิกัดภูมิศาสตร์ผ่าน Open-Meteo API
 
-## Development server
+## ✨ ฟีเจอร์หลัก (Features)
+- **ค้นหาสภาพอากาศ:** ค้นหาและแสดงผลอุณหภูมิและความเร็วลมตามชื่อเมือง
+- **ระบบ Error Handling:** แจ้งเตือนผู้ใช้อย่างชัดเจนเมื่อไม่พบข้อมูลเมือง หรือการเชื่อมต่อ API ล้มเหลว
+- **ระบบ Caching (Advanced Feature):** ลดการเรียก API ซ้ำซ้อนโดยดึงข้อมูลจาก Cache หากค้นหาเมืองเดิมภายใน 5 นาที
+- **UI ที่สวยงาม:** แยกส่วนประกอบหน้าจอ (Component) เพื่อการจัดการที่ง่ายและเป็นระเบียบ
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ เทคโนโลยีที่ใช้
+- Angular & TypeScript
+- RxJS (สำหรับการจัดการ Asynchronous data และ Caching)
+- Open-Meteo API (Geocoding & Weather Forecast)
+- Jasmine & Karma (สำหรับ Unit Testing)
 
-## Code scaffolding
+## 🚀 วิธีการติดตั้งและรันโปรเจกต์
+1. โคลนโปรเจกต์นี้ลงมาที่เครื่องของคุณ
+2. รันคำสั่ง `npm install` เพื่อติดตั้งไลบรารีต่างๆ
+3. รันคำสั่ง `ng serve` เพื่อเริ่มการทำงานของเซิร์ฟเวอร์
+4. เปิดเบราว์เซอร์ไปที่ `http://localhost:4200`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🧪 การทดสอบ (Testing)
+รันคำสั่ง `ng test` เพื่อทดสอบ Unit Test ของระบบ (Service & Components)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🤝 การใช้งาน AI อย่างมีความรับผิดชอบ (Ethical AI Usage)
+โปรเจกต์นี้ได้รับการพัฒนาโดยใช้ผู้ช่วย AI (Gemini) ในการช่วยวางโครงสร้างโค้ด การเขียน Unit Test และการให้คำแนะนำด้าน Best Practices เพื่อการเรียนรู้และพัฒนาซอฟต์แวร์อย่างมีประสิทธิภาพ
