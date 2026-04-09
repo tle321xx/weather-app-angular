@@ -1,0 +1,23 @@
+<div class="weather-card" *ngIf="weather">
+      <h3>📍 {{ cityName }}</h3>
+      
+      <div class="weather-details">
+        <div class="stat">
+          <span class="icon">🌡️</span>
+          <div class="value">
+            <span class="temp">{{ weather.current_weather.temperature }}</span>
+            <span class="unit">°C</span>
+          </div>
+          <span class="label">อุณหภูมิ</span>
+        </div>
+
+        <div class="stat">
+          <span class="icon">💨</span>
+          <div class="value">
+            <span class="speed">{{ weather.current_weather.windspeed }}</span>
+            <span class="unit">km/h</span>
+          </div>
+          <span class="label">ความเร็วลม</span>
+        </div>
+      </div>
+    </div>

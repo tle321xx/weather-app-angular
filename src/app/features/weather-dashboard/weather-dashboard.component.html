@@ -1,0 +1,17 @@
+<div class="dashboard-container">
+      <h2>🌤️ แอปพยากรณ์อากาศ</h2>
+      
+      <app-city-search (search)="handleSearch($event)"></app-city-search>
+
+      <p *ngIf="isLoading" class="loading">กำลังดึงข้อมูล...</p>
+
+      <div *ngIf="errorMessage" class="error-alert">
+        ❌ {{ errorMessage }}
+      </div>
+
+      <div *ngIf="weatherData && !isLoading && !errorMessage" class="weather-info">
+        <h3>ผลการค้นหา: {{ currentCity }}</h3>
+        <p>🌡️ อุณหภูมิ: {{ weatherData.current_weather.temperature }} °C</p>
+        <p>💨 ความเร็วลม: {{ weatherData.current_weather.windspeed }} km/h</p>
+      </div>
+    </div>

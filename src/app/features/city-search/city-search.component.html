@@ -1,0 +1,9 @@
+<div class="search-box">
+      <input 
+        type="text" 
+        #searchInput 
+        placeholder="พิมพ์ชื่อเมือง (เช่น Bangkok, Tokyo)..." 
+        (keyup.enter)="onSearch(searchInput.value)"
+      >
+      <button (click)="onSearch(searchInput.value)">ค้นหา</button>
+</div>
